@@ -73,13 +73,13 @@ class FluttertoastWebPlugin {
     final html.LinkElement css = html.LinkElement()
       ..id = 'toast-css'
       ..attributes = {"rel": "stylesheet"}
-      ..href = 'assets/packages/fluttertoast/assets/toastify.css';
+      ..href = '';
     tags.add(css);
 
     final html.ScriptElement script = html.ScriptElement()
       ..async = true
       // ..defer = true
-      ..src = "assets/packages/fluttertoast/assets/toastify.js";
+      ..src = "";
     loading.add(script.onLoad.first);
     tags.add(script);
     html.querySelector('head')!.children.addAll(tags);
